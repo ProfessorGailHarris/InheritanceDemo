@@ -34,4 +34,24 @@ int main()
     std::cout << "tough case volume through pBox1 is " << pBox1->volume() << std::endl;
 
     std::cout << "\n\n";
+
+    // 3. virtual destructors
+    
+    /*
+    std::cout << "3. Virtual Destructors\n\n";
+
+    Box* pBox2;
+    pBox2 = new Box( 2.0, 3.0, 4.0 );
+    Box* pTough2;
+    pTough2 = new ToughPack( 1.0, 2.0, 3.0 );
+
+    delete pBox2;
+    delete pTough2;
+
+    std::cout << "\n\n";
+
+    */
+
+    // End of main
+    std::cout << "End of main\n\n";
 }

@@ -27,6 +27,11 @@ public:
 	{
 		return length * width * height;
 	}
+
+	~Box()
+	{
+		//std::cout << "Box destructor called" << std::endl;
+	}
 };
 
 #endif

@@ -15,6 +15,12 @@ public:
     {
         return 0.75 * length * width * height;
     }
-};
+    
+    ~ToughPack()
+    {
+        //std::cout << "Toughpack destructor called" << std::endl;
+    }
+
+    };
 
 #endif
