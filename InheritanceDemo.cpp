@@ -2,19 +2,36 @@
 //
 
 #include <iostream>
+#include "Box.h"
+#include "ToughPack.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::cout << "Hello World!\n\n";
+
+    // 1. behaviour with objects
+    std::cout << "1. Behaviour with objects\n\n";
+
+    // declare box1 as an instance of Box
+    Box box1{ 20.0, 30.0, 40.0 };
+    
+    // declare toughie as an instance of ToughPack
+    ToughPack toughie{ 20.0, 30.0, 40.0 };
+
+    // what output do you expect from these two lines???
+    box1.showVolume();
+    toughie.showVolume();
+
+    std::cout << "\n\n";
+
+    // 2. behaviour with pointers
+    std::cout << "2.Behaviour with pointers\n\n";
+    Box *pBox1;
+    pBox1 = &toughie;
+    
+    // what output do you expect from these two lines???
+    std::cout << "tough case volume is " << toughie.volume() << std::endl;
+    std::cout << "tough case volume through pBox1 is " << pBox1->volume() << std::endl;
+
+    std::cout << "\n\n";
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
