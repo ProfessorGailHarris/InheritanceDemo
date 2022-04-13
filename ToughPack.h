@@ -18,7 +18,7 @@ public:
     
     ~ToughPack()
     {
-        //std::cout << "Toughpack destructor called" << std::endl;
+        std::cout << "Toughpack destructor called" << std::endl;
     }
 
     };

@@ -19,8 +19,8 @@ int main()
     ToughPack toughie{ 20.0, 30.0, 40.0 };
 
     // what output do you expect from these two lines???
-    box1.showVolume();
-    toughie.showVolume();
+    box1.showVolume();  // calls Box::volume()
+    toughie.showVolume(); // calls ToughPack::volume()
 
     std::cout << "\n\n";
 
@@ -35,9 +35,9 @@ int main()
 
     std::cout << "\n\n";
 
+
     // 3. virtual destructors
     
-    /*
     std::cout << "3. Virtual Destructors\n\n";
 
     Box* pBox2;
@@ -50,7 +50,6 @@ int main()
 
     std::cout << "\n\n";
 
-    */
 
     // End of main
     std::cout << "End of main\n\n";

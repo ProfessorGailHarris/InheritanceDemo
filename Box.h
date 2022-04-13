@@ -23,14 +23,14 @@ public:
 
 	// Function to calculate the volume of a Box
 	//  const ensures this method does not modify member variables.
-	double volume() const
+	virtual double volume() const
 	{
 		return length * width * height;
 	}
 
-	~Box()
+	virtual ~Box()
 	{
-		//std::cout << "Box destructor called" << std::endl;
+		std::cout << "Box destructor called" << std::endl;
 	}
 };
 
