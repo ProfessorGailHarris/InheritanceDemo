@@ -20,7 +20,7 @@ int main()
 
     // what output do you expect from these two lines???
     box1.showVolume();  // calls Box::volume()
-    toughie.showVolume(); // calls ToughPack::volume()
+    toughie.showVolume(); // calls ToughPack::volume() only if Box::volume() is virtual
 
     std::cout << "\n\n";
 
